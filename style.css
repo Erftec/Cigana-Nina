@@ -1,0 +1,257 @@
+/* ESTILOS GERAIS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #120b18;
+    color: #e0d8e8;
+    line-height: 1.6;
+}
+
+/* CABEÇALHO */
+.header {
+    background-color: #1c0e27;
+    border-bottom: 2px solid #d4af37;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo-container h1 {
+    font-family: 'Cinzel', serif;
+    color: #d4af37;
+    font-size: 2rem;
+    letter-spacing: 2px;
+}
+
+.logo-container .tagline {
+    font-size: 0.85rem;
+    color: #b5a4c5;
+    font-style: italic;
+}
+
+.nav a {
+    color: #e0d8e8;
+    text-decoration: none;
+    margin-left: 25px;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.nav a:hover {
+    color: #d4af37;
+}
+
+/* BANNER HERO */
+.hero {
+    background: linear-gradient(135deg, #2b1138 0%, #120b18 100%);
+    padding: 80px 20px;
+    text-align: center;
+    border-bottom: 1px solid #3a224c;
+}
+
+.hero-content h2 {
+    font-family: 'Cinzel', serif;
+    font-size: 2.2rem;
+    color: #f3e5ab;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+/* ESTILO DO GIRASSOL */
+.sunflower-icon {
+    font-size: 2.2rem;
+    display: inline-block;
+    vertical-align: middle;
+    filter: drop-shadow(0 0 5px rgba(212, 175, 55, 0.5));
+    animation: pulse 3s infinite ease-in-out;
+}
+
+.hero-content p {
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin: 0 auto 25px auto;
+    color: #c7b8d6;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #d4af37;
+    color: #120b18;
+    padding: 12px 30px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.btn:hover {
+    background-color: #f3e5ab;
+    transform: translateY(-2px);
+}
+
+/* CATÁLOGO */
+.catalog-section {
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-title {
+    font-family: 'Cinzel', serif;
+    text-align: center;
+    font-size: 2rem;
+    color: #d4af37;
+    margin-bottom: 30px;
+}
+
+.filter-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+}
+
+.filter-btn {
+    background: transparent;
+    border: 1px solid #d4af37;
+    color: #d4af37;
+    padding: 8px 18px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    transition: all 0.3s;
+}
+
+.filter-btn.active, .filter-btn:hover {
+    background: #d4af37;
+    color: #120b18;
+}
+
+/* GRID DE PRODUTOS */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.product-card {
+    background-color: #1c0e27;
+    border: 1px solid #3a224c;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    flex-direction: column;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(212, 175, 55, 0.15);
+    border-color: #d4af37;
+}
+
+.image-placeholder {
+    height: 220px;
+    background-color: #2b173b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #8c71a5;
+    font-style: italic;
+    border-bottom: 1px solid #3a224c;
+}
+
+.product-info {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.category {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    color: #d4af37;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+}
+
+.product-info h3 {
+    font-size: 1.2rem;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.description {
+    font-size: 0.9rem;
+    color: #b5a4c5;
+    margin-bottom: 20px;
+    flex-grow: 1;
+}
+
+.price-action {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.price {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #f3e5ab;
+}
+
+.buy-btn {
+    background-color: #5c1329;
+    color: #ffffff;
+    padding: 8px 16px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: 600;
+    transition: background 0.3s;
+}
+
+.buy-btn:hover {
+    background-color: #801b3a;
+}
+
+/* SOBRE E RODAPÉ */
+.about-section {
+    background-color: #170b20;
+    padding: 60px 20px;
+    text-align: center;
+    border-top: 1px solid #3a224c;
+}
+
+.about-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about-container h2 {
+    font-family: 'Cinzel', serif;
+    color: #d4af37;
+    margin-bottom: 15px;
+}
+
+.footer {
+    background-color: #0d0712;
+    border-top: 1px solid #231230;
+    padding: 25px 20px;
+    text-align: center;
+    font-size: 0.85rem;
+    color: #7e6b91;
+}
