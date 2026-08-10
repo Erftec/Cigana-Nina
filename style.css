@@ -57,8 +57,9 @@ body {
 }
 
 .hero-content h2 {
-    font-family: 'Cinzel', serif;
-    font-size: 2.2rem;
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.8rem;
+    /* Aumentamos um pouco o tamanho pois fontes cursivas costumam parecer menores */
     color: #f3e5ab;
     margin-bottom: 15px;
     display: flex;
@@ -134,7 +135,8 @@ body {
     transition: all 0.3s;
 }
 
-.filter-btn.active, .filter-btn:hover {
+.filter-btn.active,
+.filter-btn:hover {
     background: #d4af37;
     color: #120b18;
 }
