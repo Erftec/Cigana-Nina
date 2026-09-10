@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "nome": "Boneca",
+    "categoria": "bonecas",
+    "preco": "180,00",
+    "imagem": "img/boneca.jpg",
+    "descricao": "Boneca artesanal confeccionada com tecidos nobres e acabamento manual."
+  },
+  {
+    "id": 2,
+    "nome": "Lenço ",
+    "categoria": "lencos",
+    "preco": "85,00",
+    "imagem": "img/lenco.jpg",
+    "descricao": "Lenço com franjas e detalhes em fios brilhantes."
+  },
+  {
+    "id": 3,
+    "nome": "Sacola ",
+    "categoria": "sacolas",
+    "preco": "120,00",
+    "imagem": "img/sacola.jpg",
+    "descricao": "Sacola ecológica em algodão cru com bordado exclusivo de girassol."
+  }
+]
